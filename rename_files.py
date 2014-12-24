@@ -2,11 +2,11 @@ import os # imports libraries related to operating system
 
 def rename_files() : # defining function
 	#(1) get file names from a folder
-	file_list = os.listdir("/media/rohan/3814F06A14F02C8E/Study/Udacity/Python/prank/prank")
+	file_list = os.listdir("/media/rohan/3814F06A14F02C8E/Study/Udacity/Python/message")
 	print(file_list)
 	saved_path = os.getcwd() # gives current working directory
 	print("Current Working Directory is "+saved_path)
-	os.chdir("/media/rohan/3814F06A14F02C8E/Study/Udacity/Python/prank/prank")
+	os.chdir("/media/rohan/3814F06A14F02C8E/Study/Udacity/Python/message")
 	#(2) for each file, rename filename
 	for file_name in file_list:
 		print("Old Name - "+file_name)
