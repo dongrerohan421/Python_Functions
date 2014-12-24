@@ -9,6 +9,8 @@ def rename_files() : # defining function
 	os.chdir("/media/rohan/3814F06A14F02C8E/Study/Udacity/Python/prank/prank")
 	#(2) for each file, rename filename
 	for file_name in file_list:
+		print("Old Name - "+file_name)
+		print("New Name - "+file_name.translate(None,"0123456789"))
 		os.rename(file_name, file_name.translate(None, "0123456789")) # file_name.translate(): translate or delete characters from file name
 	os.chdir(saved_path)
 
